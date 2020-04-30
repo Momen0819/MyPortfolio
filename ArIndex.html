@@ -1,0 +1,951 @@
+﻿<!DOCTYPE html>
+<html lang="ar-eg" dir="rtl" class="no-js">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <title>مؤمن مصطفي  </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Unique - Responsive vCard Template">
+    <meta name="keywords" content="vcard, resposnive, retina, resume, jquery, css3, bootstrap, Unique, portfolio">
+    <meta name="author" content="lmtheme">
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <link rel="stylesheet" href="css\bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="css\normalize.css" type="text/css">
+    <link rel="stylesheet" href="css\animate.css" type="text/css">
+    <link rel="stylesheet" href="css\transition-animations.css" type="text/css">
+    <link rel="stylesheet" href="css\jquery.mCustomScrollbar.min.css" type="text/css">
+    <link rel="stylesheet" href="css\owl.carousel.css" type="text/css">
+    <link rel="stylesheet" href="css\magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css\main-red.css" type="text/css">
+
+    <!-- This styles needs for demo -->
+    <link rel="stylesheet" href="preview\lmpixels-demo-panel.css" type="text/css">
+    <!-- /This styles needs for demo -->
+      <link href="fonts\CairoFont.css" rel="stylesheet" />
+      <style>
+          body {
+              font-family: 'Cairo', sans-serif !important;
+          }
+
+          h2, h1, h3, h4, h5, h6, a, p, li, span {
+              font-family: 'Cairo', sans-serif !important;
+              letter-spacing: 0px !important;
+          }
+
+          .site-main
+          {
+                 margin-left: 0px; 
+          }
+
+          span{
+              padding: 0 0 0 10%;
+          }
+
+          .value{
+              font-weight:500 !important;
+              font-size:15px !important;
+          }
+
+          .owl-stage
+          {
+              transform: translate3d(0px, 0px, 0px) !important;
+          }
+          .pt-page {
+              width: 88% !important;
+          }
+
+          @media only screen and (max-width: 600px) {
+              .pt-page {
+                  width: 100% !important;
+              }
+          }
+
+          .template-style-dark .client-block img {
+                -webkit-filter: invert(0%) !important; 
+                filter: invert(0%) !important;
+            }
+
+          .client-block
+          {
+                  opacity: 1 !important; 
+          }
+
+          .subpage-block
+          {
+              padding: 20px 5px 0px 5px !important;
+          }
+
+          @media only screen and (max-width: 991px) {
+              .mobile-menu-hide {
+                  margin-left: 0;
+                  margin-right: -100%;
+                  -webkit-box-shadow: none;
+                  -moz-box-shadow: none;
+                  box-shadow: none;
+              }
+          }
+
+
+
+      </style>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    
+      ga('create', 'UA-96534204-1', 'auto');
+      ga('send', 'pageview');
+    
+    </script>
+
+    <script src="js\jquery-2.1.3.min.js"></script>
+    <script src="js\modernizr.custom.js"></script>
+  </head>
+
+  <body>
+    <!-- Loading animation -->
+    <div class="preloader">
+      <div class="preloader-animation">
+        <div class="dot1"></div>
+        <div class="dot2"></div>
+      </div>
+    </div>
+    <!-- /Loading animation -->
+
+    <div id="page" class="page template-style-dark">
+      <!-- Header -->
+      <header id="site_header" class="header mobile-menu-hide header-color-dark">
+        <div class="my-photo tilt-effect">
+          <img src="images\img.jpg" alt="image">
+        </div>
+
+        <div class="site-title-block">
+          <h1 class="site-title">مؤمن مصطفي </h1>
+        </div>
+
+        <!-- Navigation -->
+        <div class="site-nav">
+          <!-- Main menu -->
+          <ul id="nav" class="site-main-menu">
+            <li>
+              <a class="pt-trigger" onclick="HideImage()" href="#home" data-animation="21"><i class="menu-icon pe-7s-icon pe-7s-home"></i>الرئيسية</a><!-- href value = data-id without # of .pt-page. -->
+            </li>
+            <li>
+              <a class="pt-trigger" onclick="HideImage()" href="#about_me" data-animation="17"><i class="menu-icon pe-7s-icon pe-7s-user"></i> معلومات عني</a>
+            </li>
+            <li>
+              <a class="pt-trigger" onclick="HideImage()" href="#resume" data-animation="18"><i class="menu-icon pe-7s-icon pe-7s-id"></i>السيرة الذاتية</a>
+            </li>
+            <li>
+              <a class="pt-trigger" onclick="HideImage()" href="#portfolio" data-animation="19"><i class="menu-icon pe-7s-icon pe-7s-portfolio"></i>أعمالي</a>
+            </li>
+            <li>
+              <a class="pt-trigger" onclick="HideImage()" href="#contact" data-animation="20"><i class="menu-icon pe-7s-icon pe-7s-mail"></i>تواصل معي</a>
+            </li>
+              <li style="">
+                  <a class="pt-trigger" onclick="HideImage()" href="#" data-animation="20">English</a>
+              </li>
+          </ul>
+          <!-- /Main menu -->
+        </div>
+        <!-- Navigation -->
+      </header>
+      <!-- /Header -->
+
+      <!-- Mobile Header -->
+      <div class="mobile-header mobile-visible">
+        <div class="mobile-logo-container">
+          <div class="mobile-site-title">مؤمن مصطفي  </div>
+        </div>
+
+        <a class="menu-toggle mobile-visible">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      <!-- /Mobile Header -->
+
+      <!-- Main Content -->
+      <div id="main" class="site-main">
+        <!-- Page changer wrapper -->
+        <div class="pt-wrapper" style="background-image: url(images/main_bg_light.jpg);">
+          <!-- Subpages -->
+          <div class="subpages">
+
+            <!-- Home Subpage -->
+            <section class="pt-page pt-page-1 section-without-bg section-paddings-0 table" data-id="home" style="width: 100% !important;">
+              <div class="section-inner">
+                <div class="home-page-block">
+                  <h2>مؤمن مصطفي </h2>
+                  <div class="owl-carousel text-rotation">                                    
+                    <div class="item">
+                      <p class="home-page-description">مبرمج و مطور مواقع</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- End of Home Subpage -->
+
+            <!-- About Me Subpage -->
+            <section class="pt-page pt-page-2" data-id="about_me">
+              <div class="border-block-top-110"></div>
+              <div class="section-inner">
+                <div class="section-title-block">
+                  <div class="section-title-wrapper clearfix">
+                    <h2 class="section-title">معلومات عني </h2>
+                    <h5 class="section-description">مبرمج و مطور مواقع</h5>
+                  </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-7 col-md-7 col-lg-5 subpage-block">
+                        <ul class="info-list">
+                            <li><span class="title">العمر</span><span class="value">24</span></li>
+                            <li><span class="title">البلد</span><span class="value">مصر</span></li>
+                            <li><span class="title">العنوان</span><span class="value">مدينة نصر , القاهرة</span></li>
+                            <li><span class="title">البريد </span><span class="value">momenmostafa0819@gmail.com</span></li>
+                            <li><span class="title">الهاتف</span><span class="value">+201227620603 +201277337623</span></li>
+                            <li><span class="title">خمسات</span><span class="value available"><a href="https://khamsat.com/user/momen0819" target="_blank">[.......................................................]</a></span></li>
+                            <li><span class="title">مستقل</span><span class="value available"><a href="https://mostaql.com/u/Momen0819/portfolio" target="_blank">[.......................................................]</a></span></li>
+                        </ul>
+
+                        <!--<ul class="social-links">
+                            <li><a class="tip social-button" href="#" title="Twitter"><i class="fa fa-twitter"></i></a></li> 
+                            <li><a class="tip social-button" href="#" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                            <li><a class="tip social-button" href="#" title="Google Plus"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a class="tip social-button" href="#" title="Youtube"><i class="fa fa-youtube"></i></a></li>
+                            <li><a class="tip social-button" href="#" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+                            <!--<li><a class="tip social-button" href="#" title="last.fm"><i class="fa fa-lastfm"></i></a></li>-->
+                            <!--<li><a class="tip social-button" href="#" title="Dribbble"><i class="fa fa-dribbble"></i></a></li>
+                        </ul>-->
+                    </div>
+
+                  <div class="col-sm-7 col-md-7 col-lg-5">
+                    <h3>مصمم و مطور مواقع محترف</h3>
+                    <p style="font-weight:500;font-size:15px;">
+                      .  مطور تطبيقات مع خبرة أكثر من خمس سنوات بكالوريوس حاسبات ومعلومات قمت بعمل العديد من المواقع في جميع أنحاء الوطن العربي
+                    </p>
+                    <p style="font-weight:500;font-size:15px;">
+                        أترك لأعمالي التعبير عن خبرتي
+                        يسعدني زيارتك لملفي الشخصي .. ويسعدني العمل معك
+                    </p>
+                  </div>
+
+                  
+
+                    <div class="col-sm-3 col-md-3 col-lg-2 subpage-block">
+                        <div class="my-photo-block tilt-effect">
+                            <img src="images\img.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+               <!-- Services block -->
+                <div class="block-title">
+                  <h3>خدماتي </h3>
+                </div>
+
+                <div class="row">
+                  <div class="col-sm-6 col-md-3 subpage-block">
+                    <div class="service-block"> 
+                      <div class="service-info">
+                        <img src="images\service\web_design_icon.png" alt="Responsive Design">
+                        <h4>تصميم مواقع</h4>
+                        <p>تصميم مواقع بأحترافية كبيرة (HTML - CSS3 - Javascript)</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6 col-md-3 subpage-block">
+                    <div class="service-block"> 
+                      <div class="service-info">
+                        <img src="images\service\d.png" alt="Photography">
+                        <h4>تطبيقات هواتف</h4>
+                        <p>تطبيقات هواتف و ربطها بموقعك الخاص</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6 col-md-3 subpage-block">
+                    <div class="service-block"> 
+                      <div class="service-info">
+                        <img src="images\service\creativity_icon.png" alt="Creativity">
+                        <h4>تصميم لوجو</h4>
+                        <p>تصميم لوجو أحترافي متوافق لطبيعة عملك</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6 col-md-3 subpage-block">
+                    <div class="service-block"> 
+                      <div class="service-info">
+                        <img src="images\service\u.png" alt="Advetising">
+                        <h4>تطوير و تعديل مواقع</h4>
+                        <p>تطوير و تعديل مواقع بكل أحترافية (ASP.NET MVC , SQL Server)</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End of Services block -->
+
+                <!-- Clients block -->
+                <div class="block-title">
+                  <h3>بعض العملاء</h3>
+                </div>
+
+                <div class="row" style="background-color:white;border:3px solid #ff724c;">
+                  <div class="col-sm-4 col-md-2 subpage-block">
+                    <div class="client-block">
+                      <a href="http://yourfuture.ge/" target="_blank"><img src="images\clients\yf.png"  style="max-width:100%;height:150px;" alt="image"></a>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-4 col-md-2 subpage-block">
+                    <div class="client-block">
+                      <a href="https://enjaz-360.com/" target="_blank"><img src="images\clients\engaz.png" style="max-width:100%;height:150px;background-color:lightblue;" alt="image"></a>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-4 col-md-2 subpage-block">
+                    <div class="client-block">
+                      <a href="http://www.pixels-eg.com/" target="_blank"><img src="images\clients\Pixels.png" style="max-width:100%;height:150px;" alt="image"></a>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-4 col-md-2 subpage-block">
+                    <div class="client-block">
+                      <a href="http://rapid.mis-misr.com/" target="_blank"><img src="images\clients\MIS.png"  style="max-width:100%;height:150px;" alt="image"></a>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-4 col-md-2 subpage-block">
+                    <div class="client-block">
+                      <a href="http://imam-boune.com/" target="_blank"><img src="images\clients\lo.png"  style="max-width:100%;height:150px;" alt="image"></a>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-4 col-md-2 subpage-block">
+                    <div class="client-block">
+                      <a href="#" target="_blank"><img src="images\clients\logo.png"  style="max-width:100%;height: 150px;" alt="image"></a>
+                    </div>
+                  </div>
+                </div>
+                
+
+                
+                <!-- End of Fun fucts block -->
+              </div>
+            </section>
+            <!-- End of About Me Subpage -->
+
+            <!-- Resume Subpage -->
+            <section class="pt-page pt-page-3" data-id="resume">
+              <div class="border-block-top-110"></div>
+              <div class="section-inner">
+                <div class="section-title-block">
+                  <div class="section-title-wrapper">
+                    <h2 class="section-title">السيرة الذاتية</h2>
+                    <h5 class="section-description"> 4 سنوات من الخبرة</h5>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-sm-6 col-md-4 subpage-block">
+                    <div class="block-title">
+                      <h3>التعليم</h3>
+                    </div>
+                    <div class="timeline">
+                      <!-- Single event -->
+                        <!-- Single event -->
+                        <div class="timeline-event te-primary">
+                            <h5 class="event-date">2016</h5>
+                            <h4 class="event-name">كورس English </h4>
+                            <span class="event-description"> Not Courses Center</span>
+                            <p>أجتزت 4 مستويات كاملة و وصلت الي المستوي التاسع في اللغه الأنجليزية</p>
+                        </div>
+                     
+                     
+                      <!-- Single event -->
+                      <div class="timeline-event te-primary">
+                        <h5 class="event-date">2016</h5>
+                        <h4 class="event-name">كورس web design</h4>
+                        <span class="event-description">IEEE</span>
+                        <p>أجتزت هذا الكورس و حصلت علي المركز الأول انا في مسابقة نهاية الكورس</p>
+                      </div>
+
+                        <div class="timeline-event te-primary">
+                            <h5 class="event-date">2017</h5>
+                            <h4 class="event-name">كلية حاسبات و معلومات </h4>
+                            <span class="event-description">جامعة حلوان</span>
+                            <p>تخرجت من الكلية بتقدير جيد جدا </p>
+                        </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6 col-md-4 subpage-block">
+                    <div class="block-title">
+                      <h3>الخبرة</h3>
+                    </div>
+                    <div class="timeline">
+                      <!-- Single event -->
+                      <div class="timeline-event te-primary">
+                        <h5 class="event-date">من 6/2016 الي 7/2017</h5>
+                        <h4 class="event-name">Full stack web developer</h4>
+                        <span class="event-description">AFANDEM Company</span>
+                        <p>
+                            تم العمل علي العديد من المواقع مثال ( تسويق ألكتروني و أنظمة أدارة الموارد البشرية )
+                        </p>
+                      </div>
+                      <!-- Single event -->
+                      <div class="timeline-event te-primary">
+                        <h5 class="event-date">من 8/2018 الي 1/2019 </h5>
+                          <h4 class="event-name">Full stack web developer</h4>
+                        <span class="event-description">Global soft company</span>
+                        <p>
+                            تم العمل علي نظام عملاق لادارة المستشفيات و المراكز الطبية و العيادات
+                        </p>
+                      </div>
+                      <!-- Single event -->
+                      <div class="timeline-event te-primary">
+                        <h5 class="event-date">من 1/2019 الي الأن..</h5>
+                        <h4 class="event-name">Team Leader</h4>
+                          <span class="event-description">Global soft company</span>
+                        <p>
+                            تمت ترقيتي في نفس الشركة الي مرتبه مدير الفريق بأكمله
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6 col-md-4 subpage-block">
+                    <div class="block-title">
+                      <h3>المهارات</h3>
+                    </div>
+                
+                    <div class="skills-info">
+
+                        <h4>      ASP.Net MVC</h4>
+                        <div class="skill-container">
+                            <div class="skill-percentage skill-1"></div>
+                        </div>
+
+                      <h4>Web Design (HTML , Css , JS)</h4>                               
+                      <div class="skill-container">
+                        <div class="skill-percentage skill-1"></div>
+                      </div>
+
+                      <h4>AJAX & Jquery</h4>
+                      <div class="skill-container">
+                        <div class="skill-percentage skill-1"></div>
+                      </div>
+
+                      <h4>Bootstrap 3,4</h4>
+                      <div class="skill-container">
+                        <div class="skill-percentage skill-1"></div>
+                      </div> 
+                        
+                        <h4>Photo Shop</h4>
+                        <div class="skill-container">
+                            <div class="skill-percentage skill-3"></div>
+                        </div> 
+
+                        <h4>Web Hosting</h4>
+                        <div class="skill-container">
+                            <div class="skill-percentage skill-3"></div>
+                        </div> 
+
+                        <h4>SQL Server</h4>
+                        <div class="skill-container">
+                            <div class="skill-percentage skill-2"></div>
+                        </div> 
+
+                        <h4>Kendo </h4>
+                        <div class="skill-container">
+                            <div class="skill-percentage skill-3"></div>
+                        </div> 
+
+                        <h4>TFS & Get</h4>
+                        <div class="skill-container">
+                            <div class="skill-percentage skill-3"></div>
+                        </div> 
+
+                        <h4>Crystal Reports</h4>
+                        <div class="skill-container">
+                            <div class="skill-percentage skill-3"></div>
+                        </div> 
+
+                        <h4>DevExpress Reports</h4>
+                        <div class="skill-container">
+                            <div class="skill-percentage skill-3"></div>
+                        </div> 
+
+                        <h4>Design Pattern</h4>
+                        <div class="skill-container">
+                            <div class="skill-percentage skill-3"></div>
+                        </div> 
+
+                        <h4>ASP.NET web api</h4>
+                        <div class="skill-container">
+                            <div class="skill-percentage skill-3"></div>
+                        </div> 
+
+                        <h4>ASP.Net Core</h4>
+                        <div class="skill-container">
+                            <div class="skill-percentage skill-3"></div>
+                        </div> 
+                        
+                    </div>
+
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-12 col-md-12">
+                    <div class="download-cv-block">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- End Resume Subpage -->
+
+
+            <!-- Portfolio Subpage -->
+            <section class="pt-page pt-page-4" data-id="portfolio">
+                <div id="Div1">
+              <div class="border-block-top-110"></div>
+              <div class="section-inner">
+                <div class="section-title-block">
+                  <div class="section-title-wrapper">
+                    <h2 class="section-title">أعمالي</h2>
+                  </div>
+                </div>
+
+                <!-- Portfolio Content -->
+                  <div class="portfolio-content">
+
+                      <!-- Portfolio filter -->
+                      <ul id="portfolio_filters" class="portfolio-filters">
+                          <li class="active">
+                              <a class="filter btn btn-sm btn-link active" data-group="all">الكل</a>
+                          </li>
+                          <li>
+                              <a class="filter btn btn-sm btn-link" data-group="WebDesign">تصميم مواقع</a>
+                          </li>
+                          <li>
+                              <a class="filter btn btn-sm btn-link" data-group="WebDevelop">تطوير مواقع</a>
+                          </li>
+                          <li>
+                              <a class="filter btn btn-sm btn-link" data-group="PhoneApp">تطبيقات هواتف</a>
+                          </li>
+                      </ul>
+                      <!-- End of Portfolio filter -->
+                      <!-- Portfolio Grid -->
+                      <div id="portfolio_grid" class="portfolio-grid portfolio-masonry masonry-grid-3">
+
+                          <!-- Portfolio Item 3 -->
+                          <figure class="item shuffle-item filtered" data-groups='["all","WebDesign"]'>
+                              <a href="#" onclick="ShowImage('images/\portfolio/\F1.png')" class="ajax-page-load" title="موقع لمحلات بيع اثاث مستعمل">
+                                  <img src="images\portfolio\1.png" alt="" style="width: 320px;height: 200px;">
+                                  <div>
+                                      <h5 class="name">موقع لمحلات بيع اثاث مستعمل</h5>
+                                      <!--<small onclick="GoToLink('https://momen0819.github.io/DoctorSite/HomeAr.html')">رابط الموقع</small>-->
+                                      <i class="pe-7s-icon pe-7s-photo"></i>
+                                  </div>
+                              </a>
+                          </figure>
+                          <!-- /Portfolio Item 3 -->
+                          <!-- Portfolio Item 3 -->
+                          <figure class="item shuffle-item filtered" data-groups='["all","WebDesign"]'>
+                              <a href="#" onclick="ShowImage('images/\portfolio/\F2.png')" class="ajax-page-load" title="موقع لطبيب أحترافي 100%">
+                                  <img src="images\portfolio\2.png" alt="" style="width: 320px;height: 200px;">
+                                  <div>
+                                      <h5 class="name"> موقع لطبيب أحترافي 100%</h5>
+                                      <small onclick="GoToLink('https://momen0819.github.io/DoctorSite/HomeAr.html')">رابط الموقع</small>
+                                      <i class="pe-7s-icon pe-7s-photo"></i>
+                                  </div>
+                              </a>
+                          </figure>
+                          <!-- /Portfolio Item 3 -->
+                          <!-- Portfolio Item 3 -->
+                          <figure class="item shuffle-item filtered" data-groups='["all","WebDesign"]'>
+                              <a href="#" onclick="ShowImage('images/\portfolio/\F3.png')" class="ajax-page-load" title=" تصميم موقع لشركة (إنجاز360) أحترافي 100%">
+                                  <img src="images\portfolio\3.png" alt="" style="width: 320px;height: 200px;">
+                                  <div>
+                                      <h5 class="name"> تصميم موقع لشركة (إنجاز360) أحترافي 100%</h5>
+                                      <!--<small onclick="GoToLink('https://momen0819.github.io/DoctorSite/HomeAr.html')">رابط الموقع</small>-->
+                                      <i class="pe-7s-icon pe-7s-photo"></i>
+                                  </div>
+                              </a>
+                          </figure>
+                          <!-- /Portfolio Item 3 -->
+                          <!-- Portfolio Item 3 -->
+                          <figure class="item shuffle-item filtered" data-groups='["all","WebDesign"]'>
+                              <a href="#" onclick="ShowImage('images/\portfolio/\F4.png')" class="ajax-page-load" title="تصميم موقع كامل لبيع المنتجات">
+                                  <img src="images\portfolio\4.png" alt="" style="width: 320px;height: 200px;">
+                                  <div>
+                                      <h5 class="name"> تصميم موقع كامل لبيع المنتجات</h5>
+                                      <!--<small onclick="GoToLink('https://momen0819.github.io/DoctorSite/HomeAr.html')">رابط الموقع</small>-->
+                                      <i class="pe-7s-icon pe-7s-photo"></i>
+                                  </div>
+                              </a>
+                          </figure>
+                          <!-- /Portfolio Item 3 -->
+                          <!-- Portfolio Item 3 -->
+                          <figure class="item shuffle-item filtered" data-groups='["all","WebDevelop"]'>
+                              <a href="#" onclick="ShowImage('images/\portfolio/\F7.png')" class="ajax-page-load" title="تصميم و تطوير موقع لمطعم و به سله مشتريات ">
+                                  <img src="images\portfolio\7.png" alt="" style="width: 320px;height: 200px;">
+                                  <div>
+                                      <h5 class="name"> تصميم و تطوير موقع لمطعم و به سله مشتريات </h5>
+                                      <!--<small onclick="GoToLink('https://momen0819.github.io/DoctorSite/HomeAr.html')">رابط الموقع</small>-->
+                                      <i class="pe-7s-icon pe-7s-photo"></i>
+                                  </div>
+                              </a>
+                          </figure>
+                          <!-- /Portfolio Item 3 -->
+                          <!-- Portfolio Item 3 -->
+                          <figure class="item shuffle-item filtered" data-groups='["all","WebDevelop"]'>
+                              <a href="#" onclick="ShowImage('images/\portfolio/\F5.png')" class="ajax-page-load" title="موقع تسوق إلكتروني به سلة مشتريات و دفع أون لاين و مزود بلوحة تحكم رائعة">
+                                  <img src="images\portfolio\5.png" alt="" style="width: 320px;height: 200px;">
+                                  <div>
+                                      <h5 class="name">موقع تسوق إلكتروني به سلة مشتريات و دفع أون لاين و مزود بلوحة تحكم رائعة </h5>
+                                      <!--<small onclick="GoToLink('https://momen0819.github.io/DoctorSite/HomeAr.html')">رابط الموقع</small>-->
+                                      <i class="pe-7s-icon pe-7s-photo"></i>
+                                  </div>
+                              </a>
+                          </figure>
+                          <!-- /Portfolio Item 3 -->
+                          <!-- Portfolio Item 3 -->
+                          <figure class="item shuffle-item filtered" data-groups='["all","WebDevelop"]'>
+                              <a href="#" onclick="ShowImage('images/\portfolio/\F6.png')" class="ajax-page-load" title="موقع لمجمع ديني و مزود بلوحة تحكم رائعة">
+                                  <img src="images\portfolio\6.png" alt="" style="width: 320px;height: 200px;">
+                                  <div>
+                                      <h5 class="name">موقع لمجمع ديني و مزود بلوحة تحكم رائعة </h5>
+                                      <small onclick="GoToLink('http://ibntymya.somee.com/')">رابط الموقع</small>
+                                      <i class="pe-7s-icon pe-7s-photo"></i>
+                                  </div>
+                              </a>
+                          </figure>
+                          <!-- /Portfolio Item 3 -->
+                          <!-- Portfolio Item 3 -->
+                          <figure class="item shuffle-item filtered" data-groups='["all","WebDevelop"]'>
+                              <a href="#" onclick="ShowImage('images/\portfolio/\F8.png')" class="ajax-page-load" title="موقع لأدارة مركز تحفيظ قران">
+                                  <img src="images\portfolio\8.png" alt="" style="width: 320px;height: 200px;">
+                                  <div>
+                                      <h5 class="name">موقع لأدارة مركز تحفيظ قران </h5>
+                                      <!--<small onclick="GoToLink('http://ibntymya.somee.com/')">رابط الموقع</small>-->
+                                      <i class="pe-7s-icon pe-7s-photo"></i>
+                                  </div>
+                              </a>
+                          </figure>
+                          <!-- /Portfolio Item 3 -->
+                          <!-- Portfolio Item 3 -->
+                          <figure class="item shuffle-item filtered" data-groups='["all","WebDesign"]'>
+                              <a href="#" onclick="ShowImage('images/\portfolio/\F9.png')" class="ajax-page-load" title="تصميم موقع لمركز تحفيظ قرأن">
+                                  <img src="images\portfolio\9.png" alt="" style="width: 320px;height: 200px;">
+                                  <div>
+                                      <h5 class="name"> تصميم موقع لمركز تحفيظ قرأن</h5>
+                                      <small onclick="GoToLink('https://momen0819.github.io/OmerBouneCenter/HomeAr.html')">رابط الموقع</small>
+                                      <i class="pe-7s-icon pe-7s-photo"></i>
+                                  </div>
+                              </a>
+                          </figure>
+                          <!-- /Portfolio Item 3 -->
+                          <!-- Portfolio Item 3 -->
+                          <figure class="item shuffle-item filtered" data-groups='["all","WebDevelop"]'>
+                              <a href="#" onclick="ShowImage('images/\portfolio/\F10.png')" class="ajax-page-load" title="تطبيق لأدارة عيادة أو مركز طبي و به قسم للحجوزات و قسم للمخازن و قسم للمعمل و قسم للأشعة">
+                                  <img src="images\portfolio\10.png" alt="" style="width: 320px;height: 200px;">
+                                  <div>
+                                      <h5 class="name">تطبيق لأدارة عيادة أو مركز طبي و به قسم للحجوزات و قسم للمخازن و قسم للمعمل و قسم للأشعة </h5>
+                                      <small onclick="GoToLink('http://csystem.somee.com/')">رابط الموقع</small>
+                                      <i class="pe-7s-icon pe-7s-photo"></i>
+                                  </div>
+                              </a>
+                          </figure>
+                          <!-- /Portfolio Item 3 -->
+                          <!-- Portfolio Item 3 -->
+                          <figure class="item shuffle-item filtered" data-groups='["all","WebDevelop"]'>
+                              <a href="#" onclick="ShowImage('images/\portfolio/\F12.png')" class="ajax-page-load" title="موقع شركة خدمات مذود بلوحة تحكم رائعة جدا بالغتين العربي و الأنجليزي">
+                                  <img src="images\portfolio\12.png" alt="" style="width: 320px;height: 200px;">
+                                  <div>
+                                      <h5 class="name">موقع شركة خدمات مذود بلوحة تحكم رائعة جدا بالغتين العربي و الأنجليزي </h5>
+                                      <small onclick="GoToLink('http://iq.somee.com/')">رابط الموقع</small>
+                                      <i class="pe-7s-icon pe-7s-photo"></i>
+                                  </div>
+                              </a>
+                          </figure>
+                          <!-- /Portfolio Item 3 -->
+                          <!-- Portfolio Item 3 -->
+                          <figure class="item shuffle-item filtered" data-groups='["all","WebDevelop"]'>
+                              <a href="#" onclick="ShowImage('images/\portfolio/\F13.png')" class="ajax-page-load" title="موقع لأدارة مؤسسة لرفع و حجز السيارات">
+                                  <img src="images\portfolio\13.png" alt="" style="width: 320px;height: 200px;">
+                                  <div>
+                                      <h5 class="name">موقع لأدارة مؤسسة لرفع و حجز السيارات</h5>
+                                      <small onclick="GoToLink('http://haf505.com/')">رابط الموقع</small>
+                                      <i class="pe-7s-icon pe-7s-photo"></i>
+                                  </div>
+                              </a>
+                          </figure>
+                          <!-- /Portfolio Item 3 -->
+                          <!-- Portfolio Item 3 -->
+                          <figure class="item shuffle-item filtered" data-groups='["all","WebDevelop"]'>
+                              <a href="#" onclick="ShowImage('images/\portfolio/\F14.png')" class="ajax-page-load" title="موقع تابع لوزارة العدل السعودية">
+                                  <img src="images\portfolio\14.png" alt="" style="width: 320px;height: 200px;">
+                                  <div>
+                                      <h5 class="name">موقع تابع لوزارة العدل السعودية</h5>
+                                      <small onclick="GoToLink('http://jg-sa.com/')">رابط الموقع</small>
+                                      <i class="pe-7s-icon pe-7s-photo"></i>
+                                  </div>
+                              </a>
+                          </figure>
+                          <!-- /Portfolio Item 3 -->
+                          <!-- Portfolio Item 3 -->
+                          <figure class="item shuffle-item filtered" data-groups='["all","WebDesign"]'>
+                              <a href="#" onclick="ShowImage('images/\portfolio/\F15.png')" class="ajax-page-load" title="تصميم موقع لشركة حجز طيران و فنادق">
+                                  <img src="images\portfolio\15.png" alt="" style="width: 320px;height: 200px;">
+                                  <div>
+                                      <h5 class="name">تصميم موقع لشركة حجز طيران و فنادق </h5>
+                                      <small onclick="GoToLink('https://momen0819.github.io/FlysEagle/Index')">رابط الموقع</small>
+                                      <i class="pe-7s-icon pe-7s-photo"></i>
+                                  </div>
+                              </a>
+                          </figure>
+                          <!-- /Portfolio Item 3 -->
+                          <!-- Portfolio Item 3 -->
+                          <figure class="item shuffle-item filtered" data-groups='["all","WebDesign"]'>
+                              <a href="#" onclick="ShowImage('images/\portfolio/\F16.png')" class="ajax-page-load" title="تصميم موقع لشركة تصاميم و جرافيك للمطاعم و غيره">
+                                  <img src="images\portfolio\16.png" alt="" style="width: 320px;height: 200px;">
+                                  <div>
+                                      <h5 class="name">تصميم موقع لشركة تصاميم و جرافيك للمطاعم و غيره </h5>
+                                      <small onclick="GoToLink('http://house.sa/')">رابط الموقع</small>
+                                      <i class="pe-7s-icon pe-7s-photo"></i>
+                                  </div>
+                              </a>
+                          </figure>
+                          <!-- /Portfolio Item 3 -->
+                          <!-- Portfolio Item 3 -->
+                          <figure class="item shuffle-item filtered" data-groups='["all","PhoneApp"]'>
+                              <a href="#" onclick="ShowImage('images/\portfolio/\F17.png')" class="ajax-page-load" title=" تطبيق لعقارات العراق">
+                                  <img src="images\portfolio\17.png" alt="" style="width: 320px;height: 200px;">
+                                  <div>
+                                      <h5 class="name"> تطبيق لعقارات العراق  </h5>
+                                      <!--<small onclick="GoToLink('https://momen0819.github.io/CompanyTemplate3/')">رابط موقع التطبيق</small>-->
+                                      <i class="pe-7s-icon pe-7s-photo"></i>
+                                  </div>
+                              </a>
+                          </figure>
+                          <!-- /Portfolio Item 3 -->
+                          <!-- Portfolio Item 3 -->
+                          <figure class="item shuffle-item filtered" data-groups='["all","WebDesign"]'>
+                              <a href="#" onclick="ShowImage('images/\portfolio/\F18.png')" class="ajax-page-load" title="تصميم موقع لشركة عقارية في السعودية">
+                                  <img src="images\portfolio\18.png" alt="" style="width: 320px;height: 200px;">
+                                  <div>
+                                      <h5 class="name">تصميم موقع لشركة عقارية في السعودية </h5>
+                                      <small onclick="GoToLink('https://momen0819.github.io/CompanyTemplate2/')">رابط الموقع</small>
+                                      <i class="pe-7s-icon pe-7s-photo"></i>
+                                  </div>
+                              </a>
+                          </figure>
+                          <!-- /Portfolio Item 3 -->
+                          <!-- Portfolio Item 3 -->
+                          <figure class="item shuffle-item filtered" data-groups='["all","WebDesign"]'>
+                              <a href="#" onclick="ShowImage('images/\portfolio/\F19.png')" class="ajax-page-load" title="تصميم موقع لدورات تدربية للأطباء">
+                                  <img src="images\portfolio\19.png" alt="" style="width: 320px;height: 200px;">
+                                  <div>
+                                      <h5 class="name">تصميم موقع لدورات تدربية للأطباء </h5>
+                                      <small onclick="GoToLink('https://momen0819.github.io/CME/')">رابط الموقع</small>
+                                      <i class="pe-7s-icon pe-7s-photo"></i>
+                                  </div>
+                              </a>
+                          </figure>
+                          <!-- /Portfolio Item 3 -->
+
+                      </div>
+                      <!-- /Portfolio Grid -->
+                  </div>
+                </div>
+                <!-- /Portfolio Content -->
+              </div>
+                
+            </section>
+            <!-- /Portfolio Subpage -->
+
+            <!-- Contact Subpage -->
+            <section class="pt-page pt-page-5" data-id="contact">
+              <div class="border-block-top-110"></div>
+              <div class="section-inner">
+                <div class="section-title-block">
+                  <div class="section-title-wrapper">
+                    <h2 class="section-title">تواصل معي</h2>
+                    <h5 class="section-description">أبقي علي أتصال</h5>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-sm-6 col-md-6 subpage-block">
+                    <div class="block-title">
+                      <h3>أبقي علي أتصال</h3>
+                    </div>
+                    <p>
+                        ارسل لنا بياناتك و استفسارك و سوف يتم الرد عليك في الحال 
+
+                    </p>
+                    <div class="contact-info-block">
+                      <div class="ci-icon">
+                        <i class="pe-7s-icon pe-7s-map-marker"></i>
+                      </div>
+                      <div class="ci-text">
+                        <h5>مدينة نصر , القاهرة</h5>
+                      </div>
+                    </div>
+                    <div class="contact-info-block">
+                      <div class="ci-icon">
+                        <i class="pe-7s-icon pe-7s-mail"></i>
+                      </div>
+                      <div class="ci-text">
+                        <h5>momenmostafa0819@gmail.com</h5>
+                      </div>
+                    </div>
+                    <div class="contact-info-block">
+                      <div class="ci-icon">
+                        <i class="pe-7s-icon pe-7s-call"></i>
+                      </div>
+                      <div class="ci-text">
+                        <h5>+201227620603 / +201277337623</h5>
+                      </div>
+                    </div>
+                    <div class="contact-info-block">
+                      <div class="ci-icon">
+                        <i class="pe-7s-icon pe-7s-check"></i>
+                      </div>
+                      <div class="ci-text">
+                        <h5>أنا متاح للعمل حاليا أغتنم الفرصة</h5>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6 col-md-6 subpage-block">
+                    <div class="block-title">
+                      <h3>نموذج الاتصال</h3>
+                    </div>
+                    <form id="contact-form" method="post" action="contact_form/contact_form.php">
+
+                      <div class="messages"></div>
+
+                      <div class="controls">
+                        <div class="form-group">
+                            <input style="text-align:right;font-family:cairo" id="form_name" type="text" name="name" class="form-control" placeholder="الأسم بالكامل" required="required" data-error="الأسم مطلوب">
+                            <div class="form-control-border"></div>
+                            <i class="form-control-icon pe-7s-user"></i>
+                            <div class="help-block with-errors"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <input style="text-align:right;font-family:cairo" id="form_email" type="email" name="email" class="form-control" placeholder="البريد الألكتروني" required="required" data-error="البريد الألكتروني مطلوب">
+                            <div class="form-control-border"></div>
+                            <i class="form-control-icon pe-7s-mail"></i>
+                            <div class="help-block with-errors"></div>
+                        </div>
+
+                          <div class="form-group">
+                              <input style="text-align:right;font-family:cairo" id="form_Phone" type="text" name="text" class="form-control" placeholder="رقم الهاتف" required="required" data-error=" رقم الهاتف مطلوب">
+                              <div class="form-control-border"></div>
+                              <i class="form-control-icon pe-7s-call"></i>
+                              <div class="help-block with-errors"></div>
+                          </div>
+
+                        <div class="form-group">
+                            <textarea style="text-align:right;font-family:cairo" id="form_message" name="message" class="form-control" placeholder="نص الرسالة .........." rows="4" required="required" data-error="من فضلك أدخل نص الرسالة"></textarea>
+                            <div class="form-control-border"></div>
+                            <i class="form-control-icon pe-7s-comment"></i>
+                            <div class="help-block with-errors"></div>
+                        </div>
+
+                        <input type="button" onclick="SendMessage()" class="button btn-send" value="أرسال" style="font-family:Cairo">
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- End Contact Subpage -->
+
+          </div>
+        </div>
+        <!-- /Page changer wrapper -->
+      </div>
+      <!-- /Main Content -->
+    </div>
+
+      <div id="myModal" class="modal fade in" role="dialog">
+          <div class="modal-dialog modal-lg">
+
+              <!-- Modal content-->
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">×</button>
+                  </div>
+                  <div class="modal-body" id="Div2">
+
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">أغلاق</button>
+                  </div>
+              </div>
+
+          </div>
+      </div>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js\bootstrap.min.js"></script>
+    <script src="js\pages-switcher.js"></script>
+    <script src="js\imagesloaded.pkgd.min.js"></script>
+    <script src="js\validator.js"></script>
+    <script src="js\jquery.shuffle.min.js"></script>
+    <script src="js\masonry.pkgd.min.js"></script>
+    <script src="js\owl.carousel.min.js"></script>
+    <script src="js\jquery.magnific-popup.min.js"></script>
+    <script src="js\jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js\tilt.jquery.min.js"></script>
+    <script src="js\jquery.hoverdir.js"></script>
+    <script src="js\main.js"></script>
+
+    <!-- Demo Color changer Script -->
+    <script src="preview\lmpixels-demo-panel.js"></script>
+      <script>
+          function GoToLink(Link)
+          {
+              window.open(Link, '_blank');
+          }
+
+          function ShowImage(ImageLink)
+          {
+              $('#Div2').html('<img src="' + ImageLink + '" alt="" style="width: 100%;height: 100%;">');
+              $('#myModal').modal('show');
+          }
+
+          function HideImage()
+          {
+              $('#Div2').html("");
+          }
+
+
+          function SendMessage()
+          {
+              var Email = $('#form_email').val();
+              var Name = $('#form_name').val();
+              var Message = $('#form_message').val();
+              var Phone = $('#form_Phone').val();
+
+              if (Email != "" && Name != "" && Message != "" && Phone != "")
+              {
+                  window.open("http://link.somee.com/Home/SendMessage?Email=" + Email + "&Msg=" + Message + "&Name=" + Name + "&Phone=" + Phone + "", "_self");
+                  window.open("https://momen0819.github.io/MyPortfolio/ArIndex.html", "_self");
+              }
+          }
+
+      </script>
+    <!-- /Demo Color changer Script -->
+  </body>
+</html>
