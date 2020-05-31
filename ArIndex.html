@@ -941,7 +941,12 @@
               if (Email != "" && Name != "" && Message != "" && Phone != "")
               {
                   window.open("http://link.somee.com/Home/SendMessage?Email=" + Email + "&Msg=" + Message + "&Name=" + Name + "&Phone=" + Phone + "", "_blank");
-                  //window.open("https://momen0819.github.io/MyPortfolio/ArIndex.html", "_self");
+                 alert("تم أرسال الرسالة بنجاح");
+                $('#form_email').val("");
+                 $('#form_name').val("");
+                 $('#form_message').val("");
+                 $('#form_Phone').val("");
+                //window.open("https://momen0819.github.io/MyPortfolio/ArIndex.html", "_self");
               }
           }
 
